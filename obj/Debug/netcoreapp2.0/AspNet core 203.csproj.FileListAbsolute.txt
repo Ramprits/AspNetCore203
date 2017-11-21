@@ -1,0 +1,10 @@
+C:\Users\R1163213\Application\Demo\AspNet core 203\bin\Debug\netcoreapp2.0\AspNet core 203.deps.json
+C:\Users\R1163213\Application\Demo\AspNet core 203\bin\Debug\netcoreapp2.0\AspNet core 203.runtimeconfig.json
+C:\Users\R1163213\Application\Demo\AspNet core 203\bin\Debug\netcoreapp2.0\AspNet core 203.runtimeconfig.dev.json
+C:\Users\R1163213\Application\Demo\AspNet core 203\bin\Debug\netcoreapp2.0\AspNet core 203.dll
+C:\Users\R1163213\Application\Demo\AspNet core 203\bin\Debug\netcoreapp2.0\AspNet core 203.pdb
+C:\Users\R1163213\Application\Demo\AspNet core 203\obj\Debug\netcoreapp2.0\AspNet core 203.csproj.CoreCompileInputs.cache
+C:\Users\R1163213\Application\Demo\AspNet core 203\obj\Debug\netcoreapp2.0\AspNet core 203.AssemblyInfoInputs.cache
+C:\Users\R1163213\Application\Demo\AspNet core 203\obj\Debug\netcoreapp2.0\AspNet core 203.AssemblyInfo.cs
+C:\Users\R1163213\Application\Demo\AspNet core 203\obj\Debug\netcoreapp2.0\AspNet core 203.dll
+C:\Users\R1163213\Application\Demo\AspNet core 203\obj\Debug\netcoreapp2.0\AspNet core 203.pdb
