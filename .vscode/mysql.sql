@@ -1,0 +1,2 @@
+SELECT * From dbo.Camp
+
