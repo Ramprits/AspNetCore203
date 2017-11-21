@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -14,6 +15,7 @@ namespace AspNet_core_203.Models {
         public string StateProvince { get; set; }
         public string PostalCode { get; set; }
         public string Country { get; set; }
+        public ICollection<Camp> Camp { get; set; }
         public byte[] RowVersion { get; set; }
     }
 }

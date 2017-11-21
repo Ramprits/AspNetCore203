@@ -6,6 +6,5 @@ namespace AspNet_core_203.ViewModels {
         public string Name { get; set; }
         public DateTime EventDate { get; set; } = DateTime.MinValue;
         public int Length { get; set; }
-        public string Address1 { get; set; }
     }
 }
