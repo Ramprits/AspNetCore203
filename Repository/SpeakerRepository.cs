@@ -26,9 +26,8 @@ namespace AspNet_core_203.Repository {
         public async Task<IEnumerable<Speaker>> GetSpeakerAsync () {
             return await _ctx.Speakers.ToListAsync ();
         }
-
-        public Task<Speaker> GetSpeakerAsync (Guid speakerId) {
-            throw new NotImplementedException ();
+        public async Task<Speaker> GetSpeakerAsync (Guid speakerId) {
+            return await _ctx.Speakers.FirstOrDefaultAsync (x => x.SpeakerId == speakerId);
         }
 
         public Task<Speaker> InsertSpeaker (Speaker speaker) {
