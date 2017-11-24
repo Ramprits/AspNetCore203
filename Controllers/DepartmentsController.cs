@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AutoMapper;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using AspNet_core_203.Models;
 using AspNet_core_203.Repository;
 using AspNet_core_203.ViewModels;
+using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace AspNet_core_203.Controllers {
     [Route ("api/Departments")]

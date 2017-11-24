@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using AspNet_core_203.Infrastructure;
 using AspNet_core_203.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AspNet_core_203.Repository {
     public class DepartmentRepository : IDepartmentRepository {
