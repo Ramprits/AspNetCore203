@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspNet_core_203.Models {
     [Table ("Camp", Schema = "dbo")]
-    public class Camp {
+    public class Camp : Entity {
         [Key]
         public Guid CampId { get; set; }
         public string Name { get; set; }
@@ -12,6 +12,6 @@ namespace AspNet_core_203.Models {
         public int Length { get; set; }
         public string Description { get; set; }
         public Location Location { get; set; }
-        public byte[] RowVersion { get; set; }
+
     }
 }

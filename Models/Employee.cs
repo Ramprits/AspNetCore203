@@ -5,7 +5,7 @@ using AspNet_core_203.Infrastructure;
 
 namespace AspNet_core_203.Models {
     [Table ("Employee", Schema = "MST")]
-    public class Employee : ClientChangeTracker {
+    public class Employee  : Entity {
         [Key]
         public Guid EmployeeId { get; set; }
         public string FirstName { get; set; }
@@ -13,11 +13,9 @@ namespace AspNet_core_203.Models {
         public string Email { get; set; }
         public string Mobile { get; set; }
         public string Image { get; set; }
-        public DateTime CreatedDate { get; set; } = DateTime.Now;
         public Guid? GenderId { get; set; }
         public Gender Gender { get; set; }
         public Guid DepartmentId { get; set; }
         public Department Department { get; set; }
-        public byte[] RowVersion { get; set; }
     }
 }

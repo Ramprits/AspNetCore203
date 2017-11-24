@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspNet_core_203.Models {
     [Table ("Location", Schema = "dbo")]
-    public class Location {
+    public class Location: Entity {
         [Key]
         public Guid LocationId { get; set; }
         public string Address1 { get; set; }
@@ -16,6 +16,6 @@ namespace AspNet_core_203.Models {
         public string PostalCode { get; set; }
         public string Country { get; set; }
         public ICollection<Camp> Camp { get; set; }
-        public byte[] RowVersion { get; set; }
+       
     }
 }

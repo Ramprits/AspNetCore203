@@ -12,9 +12,10 @@ using System;
 namespace AspNetcore203.Migrations
 {
     [DbContext(typeof(AspNet_core_203DbContext))]
-    partial class AspNet_core_203DbContextModelSnapshot : ModelSnapshot
+    [Migration("20171124115240_Addclients")]
+    partial class Addclients
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,8 +27,6 @@ namespace AspNetcore203.Migrations
                 {
                     b.Property<Guid>("CampId")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<DateTime>("CreatedDate");
 
                     b.Property<string>("Description");
 
@@ -61,8 +60,6 @@ namespace AspNetcore203.Migrations
 
                     b.Property<string>("Company");
 
-                    b.Property<DateTime>("CreatedDate");
-
                     b.Property<string>("Email");
 
                     b.Property<string>("FirstName");
@@ -80,34 +77,6 @@ namespace AspNetcore203.Migrations
                     b.HasKey("ClientId");
 
                     b.ToTable("Client","dbo");
-                });
-
-            modelBuilder.Entity("AspNet_core_203.Models.Contact", b =>
-                {
-                    b.Property<Guid>("ContactId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("Comment");
-
-                    b.Property<DateTime>("CreatedDate");
-
-                    b.Property<string>("Email");
-
-                    b.Property<DateTime>("LastModified");
-
-                    b.Property<string>("Mobile");
-
-                    b.Property<string>("Name");
-
-                    b.Property<byte[]>("RowVersion")
-                        .IsConcurrencyToken()
-                        .ValueGeneratedOnAddOrUpdate();
-
-                    b.Property<string>("Subject");
-
-                    b.HasKey("ContactId");
-
-                    b.ToTable("Contact","dbo");
                 });
 
             modelBuilder.Entity("AspNet_core_203.Models.Department", b =>
@@ -177,8 +146,6 @@ namespace AspNetcore203.Migrations
 
                     b.Property<string>("Name");
 
-                    b.Property<byte[]>("RowVersion");
-
                     b.HasKey("GenderId");
 
                     b.ToTable("Gender","MST");
@@ -198,8 +165,6 @@ namespace AspNetcore203.Migrations
                     b.Property<string>("CityTown");
 
                     b.Property<string>("Country");
-
-                    b.Property<DateTime>("CreatedDate");
 
                     b.Property<DateTime>("LastModified");
 
@@ -226,8 +191,6 @@ namespace AspNetcore203.Migrations
                     b.Property<Guid?>("CampId");
 
                     b.Property<string>("CompanyName");
-
-                    b.Property<DateTime>("CreatedDate");
 
                     b.Property<string>("GitHubName");
 
@@ -264,8 +227,6 @@ namespace AspNetcore203.Migrations
                     b.Property<string>("Abstract");
 
                     b.Property<string>("Category");
-
-                    b.Property<DateTime>("CreatedDate");
 
                     b.Property<DateTime>("LastModified");
 

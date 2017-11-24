@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AspNet_core_203.Models {
     [Table ("Speaker", Schema = "dbo")]
-    public class Speaker {
+    public class Speaker : Entity{
         [Key]
         public Guid SpeakerId { get; set; }
         public string Name { get; set; }
@@ -21,6 +21,5 @@ namespace AspNet_core_203.Models {
         public ICollection<Talk> Talks { get; set; }
         public Camp Camp { get; set; }
 
-        public byte[] RowVersion { get; set; }
     }
 }

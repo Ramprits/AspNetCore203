@@ -5,11 +5,10 @@ using AspNet_core_203.Infrastructure;
 
 namespace AspNet_core_203.Models {
     [Table ("Department", Schema = "MST")]
-    public class Department : ClientChangeTracker {
+    public class Department : Entity {
         [Key]
         public Guid DepartmentId { get; set; }
         public string Name { get; set; }
-        public byte[] RowVersion { get; set; }
-        public DateTime CreatedDate { get; set; } = DateTime.Now;
+
     }
 }

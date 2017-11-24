@@ -13,6 +13,8 @@ namespace AspNet_core_203.Infrastructure {
         public DbSet<Talk> Talks { get; set; }
         public DbSet<Speaker> Speakers { get; set; }
         public DbSet<Camp> Camps { get; set; }
+        public DbSet<Client> Clients { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
 
         protected override void OnModelCreating (ModelBuilder modelBuilder) {
             modelBuilder.HasDefaultSchema ("security");
@@ -20,7 +22,8 @@ namespace AspNet_core_203.Infrastructure {
             modelBuilder.Entity<Department> ().Property (d => d.RowVersion).ValueGeneratedOnAddOrUpdate ().IsConcurrencyToken ();
             modelBuilder.Entity<Camp> ().Property (c => c.RowVersion).ValueGeneratedOnAddOrUpdate ().IsConcurrencyToken ();
             modelBuilder.Entity<Location> ().Property (l => l.RowVersion).ValueGeneratedOnAddOrUpdate ().IsConcurrencyToken ();
-
+            modelBuilder.Entity<Client> ().Property (c => c.RowVersion).ValueGeneratedOnAddOrUpdate ().IsConcurrencyToken ();
+            modelBuilder.Entity<Contact> ().Property (c => c.RowVersion).ValueGeneratedOnAddOrUpdate ().IsConcurrencyToken ();
             foreach (var entityType in modelBuilder.Model.GetEntityTypes ()) {
                 modelBuilder.Entity (entityType.Name).Property<DateTime> ("LastModified");
                 modelBuilder.Entity (entityType.Name).Ignore ("IsDirty");
