@@ -12609,11 +12609,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\R1163213\\Application\\Demo\\AspNet core 203\\AspNet core 203.csproj",
+      "projectUniqueName": "C:\\Users\\R1163213\\Application\\Demo\\AspNet core 203\\AspNet core 203.csproj",
       "projectName": "AspNet core 203",
-      "projectPath": "c:\\Users\\R1163213\\Application\\Demo\\AspNet core 203\\AspNet core 203.csproj",
+      "projectPath": "C:\\Users\\R1163213\\Application\\Demo\\AspNet core 203\\AspNet core 203.csproj",
       "packagesPath": "C:\\Users\\R1163213\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\R1163213\\Application\\Demo\\AspNet core 203\\obj\\",
+      "outputPath": "C:\\Users\\R1163213\\Application\\Demo\\AspNet core 203\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
