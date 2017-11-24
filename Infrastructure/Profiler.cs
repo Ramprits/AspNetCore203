@@ -15,6 +15,8 @@ namespace AspNet_core_203.Infrastructure {
             ForMember (x => x.Value, opt => opt.MapFrom (x => x.DepartmentId));
             CreateMap<CreateDepartment, Department> ().ReverseMap ();
             CreateMap<Camp, CampVm> ().ReverseMap ();
+            CreateMap<Client, ClientVm> ().ForMember (c => c.Name, opt => opt.MapFrom (c => $"{c.FirstName} {c.LastName}")).ReverseMap ();
+            CreateMap<Contact, ContactVm> ().ReverseMap ();
         }
     }
 }
