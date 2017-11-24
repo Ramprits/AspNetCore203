@@ -22,7 +22,6 @@ namespace AspNet_core_203.Repository {
                 throw new Exception ($"{ex.Message}");
             }
         }
-
         public async Task<IEnumerable<Speaker>> GetSpeakerAsync () {
             return await _ctx.Speakers.ToListAsync ();
         }
