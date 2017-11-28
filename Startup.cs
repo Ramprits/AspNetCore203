@@ -1,4 +1,7 @@
 ﻿using System;
+using AspNet_core_203.Infrastructure;
+using AspNet_core_203.Models;
+using AspNet_core_203.Repository;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
@@ -9,9 +12,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using AspNet_core_203.Infrastructure;
-using AspNet_core_203.Models;
-using AspNet_core_203.Repository;
 using Newtonsoft.Json;
 
 namespace AspNet_core_203 {
@@ -33,6 +33,7 @@ namespace AspNet_core_203 {
                         ReferenceLoopHandling.Ignore;
                 });
             services.AddScoped<ICampRepository, CampRepository> ();
+            services.AddScoped<ICampaignaignRepository, CampaignaignRepository> ();
             services.AddScoped<IEmployeeRepository, EmployeeRepository> ();
             services.AddScoped<IDepartmentRepository, DepartmentRepository> ();
             services.AddAutoMapper ();
