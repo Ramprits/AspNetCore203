@@ -15,6 +15,10 @@ namespace AspNet_core_203.Infrastructure {
         public DbSet<Camp> Camps { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Training> Trainings { get; set; }
+        public DbSet<Modality> Modalities { get; set; }
+        public DbSet<Organization> Organizations { get; set; }
+        public DbSet<BusinessUnit> BusinessUnit { get; set; }
 
         protected override void OnModelCreating (ModelBuilder modelBuilder) {
             modelBuilder.HasDefaultSchema ("security");
@@ -24,18 +28,9 @@ namespace AspNet_core_203.Infrastructure {
             modelBuilder.Entity<Location> ().Property (l => l.RowVersion).ValueGeneratedOnAddOrUpdate ().IsConcurrencyToken ();
             modelBuilder.Entity<Client> ().Property (c => c.RowVersion).ValueGeneratedOnAddOrUpdate ().IsConcurrencyToken ();
             modelBuilder.Entity<Contact> ().Property (c => c.RowVersion).ValueGeneratedOnAddOrUpdate ().IsConcurrencyToken ();
-            foreach (var entityType in modelBuilder.Model.GetEntityTypes ()) {
-                modelBuilder.Entity (entityType.Name).Property<DateTime> ("LastModified");
-                modelBuilder.Entity (entityType.Name).Ignore ("IsDirty");
-            }
+
             base.OnModelCreating (modelBuilder);
         }
-        public override int SaveChanges () {
-            foreach (var entry in ChangeTracker.Entries ()
-                    .Where (e => e.State == EntityState.Added || e.State == EntityState.Modified)) {
-                entry.Property ("LastModified").CurrentValue = DateTime.Now;
-            }
-            return base.SaveChanges ();
-        }
+
     }
 }

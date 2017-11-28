@@ -12,9 +12,10 @@ using System;
 namespace AspNetcore203.Migrations
 {
     [DbContext(typeof(AspNet_core_203DbContext))]
-    partial class AspNet_core_203DbContextModelSnapshot : ModelSnapshot
+    [Migration("20171128101935_AddedBusiness")]
+    partial class AddedBusiness
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,7 +36,7 @@ namespace AspNetcore203.Migrations
 
                     b.HasKey("BusinessUnitId");
 
-                    b.ToTable("BusinessUnit","dbo");
+                    b.ToTable("BusinessUnit");
                 });
 
             modelBuilder.Entity("AspNet_core_203.Models.Camp", b =>
@@ -245,7 +246,7 @@ namespace AspNetcore203.Migrations
 
                     b.HasKey("ModalityId");
 
-                    b.ToTable("Modality","dbo");
+                    b.ToTable("Modality");
                 });
 
             modelBuilder.Entity("AspNet_core_203.Models.Organization", b =>
@@ -261,7 +262,7 @@ namespace AspNetcore203.Migrations
 
                     b.HasKey("OrganizationId");
 
-                    b.ToTable("Organization","dbo");
+                    b.ToTable("Organization");
                 });
 
             modelBuilder.Entity("AspNet_core_203.Models.Speaker", b =>
@@ -389,7 +390,7 @@ namespace AspNetcore203.Migrations
 
                     b.HasIndex("OrganizationId");
 
-                    b.ToTable("Training","dbo");
+                    b.ToTable("Training");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

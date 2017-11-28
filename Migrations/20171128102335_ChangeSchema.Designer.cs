@@ -12,9 +12,10 @@ using System;
 namespace AspNetcore203.Migrations
 {
     [DbContext(typeof(AspNet_core_203DbContext))]
-    partial class AspNet_core_203DbContextModelSnapshot : ModelSnapshot
+    [Migration("20171128102335_ChangeSchema")]
+    partial class ChangeSchema
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

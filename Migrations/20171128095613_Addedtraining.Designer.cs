@@ -12,31 +12,16 @@ using System;
 namespace AspNetcore203.Migrations
 {
     [DbContext(typeof(AspNet_core_203DbContext))]
-    partial class AspNet_core_203DbContextModelSnapshot : ModelSnapshot
+    [Migration("20171128095613_Addedtraining")]
+    partial class Addedtraining
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
                 .HasDefaultSchema("security")
                 .HasAnnotation("ProductVersion", "2.0.1-rtm-125")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-            modelBuilder.Entity("AspNet_core_203.Models.BusinessUnit", b =>
-                {
-                    b.Property<Guid>("BusinessUnitId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<bool>("IsActive");
-
-                    b.Property<DateTime>("LastModified");
-
-                    b.Property<string>("Name");
-
-                    b.HasKey("BusinessUnitId");
-
-                    b.ToTable("BusinessUnit","dbo");
-                });
 
             modelBuilder.Entity("AspNet_core_203.Models.Camp", b =>
                 {
@@ -232,38 +217,6 @@ namespace AspNetcore203.Migrations
                     b.ToTable("Location","dbo");
                 });
 
-            modelBuilder.Entity("AspNet_core_203.Models.Modality", b =>
-                {
-                    b.Property<Guid>("ModalityId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<bool>("IsActive");
-
-                    b.Property<DateTime>("LastModified");
-
-                    b.Property<string>("Name");
-
-                    b.HasKey("ModalityId");
-
-                    b.ToTable("Modality","dbo");
-                });
-
-            modelBuilder.Entity("AspNet_core_203.Models.Organization", b =>
-                {
-                    b.Property<Guid>("OrganizationId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<bool>("IsActive");
-
-                    b.Property<DateTime>("LastModified");
-
-                    b.Property<string>("Name");
-
-                    b.HasKey("OrganizationId");
-
-                    b.ToTable("Organization","dbo");
-                });
-
             modelBuilder.Entity("AspNet_core_203.Models.Speaker", b =>
                 {
                     b.Property<Guid>("SpeakerId")
@@ -336,60 +289,6 @@ namespace AspNetcore203.Migrations
                     b.HasIndex("SpeakerId");
 
                     b.ToTable("Talk","dbo");
-                });
-
-            modelBuilder.Entity("AspNet_core_203.Models.Training", b =>
-                {
-                    b.Property<Guid>("TrainingId")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<decimal>("AverageCost");
-
-                    b.Property<Guid>("BusinessUnitId");
-
-                    b.Property<string>("ConcernedPublic");
-
-                    b.Property<string>("Description");
-
-                    b.Property<int>("DurationInDays");
-
-                    b.Property<string>("EducationalObjectives");
-
-                    b.Property<string>("ExternalLinks");
-
-                    b.Property<bool>("IsActive");
-
-                    b.Property<bool>("IsApproved");
-
-                    b.Property<string>("IsCPF");
-
-                    b.Property<bool>("IsFree");
-
-                    b.Property<string>("Language");
-
-                    b.Property<DateTime>("LastModified");
-
-                    b.Property<string>("Location");
-
-                    b.Property<Guid>("ModalityId");
-
-                    b.Property<string>("Name");
-
-                    b.Property<Guid>("OrganizationId");
-
-                    b.Property<string>("OthersEducationalObjectives");
-
-                    b.Property<DateTime>("StartDate");
-
-                    b.HasKey("TrainingId");
-
-                    b.HasIndex("BusinessUnitId");
-
-                    b.HasIndex("ModalityId");
-
-                    b.HasIndex("OrganizationId");
-
-                    b.ToTable("Training","dbo");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -618,24 +517,6 @@ namespace AspNetcore203.Migrations
                     b.HasOne("AspNet_core_203.Models.Speaker", "Speaker")
                         .WithMany("Talks")
                         .HasForeignKey("SpeakerId");
-                });
-
-            modelBuilder.Entity("AspNet_core_203.Models.Training", b =>
-                {
-                    b.HasOne("AspNet_core_203.Models.BusinessUnit", "BusinessUnit")
-                        .WithMany("Training")
-                        .HasForeignKey("BusinessUnitId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("AspNet_core_203.Models.Modality", "Modality")
-                        .WithMany("Training")
-                        .HasForeignKey("ModalityId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("AspNet_core_203.Models.Organization", "Organization")
-                        .WithMany("Training")
-                        .HasForeignKey("OrganizationId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
