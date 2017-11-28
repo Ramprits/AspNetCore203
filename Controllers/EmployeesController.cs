@@ -4,12 +4,12 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using AspNet_core_203.Infrastructure;
-using AspNet_core_203.Models;
-using AspNet_core_203.Repository;
-using AspNet_core_203.ViewModels;
+using AspNetCore203.Infrastructure;
+using AspNetCore203.Models;
+using AspNetCore203.Repository;
+using AspNetCore203.ViewModels;
 
-namespace AspNet_core_203.Controllers {
+namespace AspNetCore203.Controllers {
     [Route ("api/Employees"), ValidateModel, NoCache]
     public class EmployeesController : Controller {
         private readonly IEmployeeRepository _repository;

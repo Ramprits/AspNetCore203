@@ -1,7 +1,7 @@
 ﻿using System;
-using AspNet_core_203.Infrastructure;
-using AspNet_core_203.Models;
-using AspNet_core_203.Repository;
+using AspNetCore203.Infrastructure;
+using AspNetCore203.Models;
+using AspNetCore203.Repository;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics;
@@ -14,7 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace AspNet_core_203 {
+namespace AspNetCore203 {
     public class Startup {
         public Startup (IConfiguration configuration) {
             Configuration = configuration;
@@ -23,7 +23,7 @@ namespace AspNet_core_203 {
         public IConfiguration Configuration { get; }
 
         public void ConfigureServices (IServiceCollection services) {
-            services.AddDbContext<AspNet_core_203DbContext> (options => {
+            services.AddDbContext<AspNetCore203DbContext> (options => {
                 options.UseSqlServer (Configuration.GetConnectionString ("ApplicationConnection"));
             }).AddIdentity<ApplicationUser, IdentityRole> ();
 

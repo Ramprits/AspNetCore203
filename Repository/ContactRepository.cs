@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AspNet_core_203.Infrastructure;
-using AspNet_core_203.Models;
+using AspNetCore203.Infrastructure;
+using AspNetCore203.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspNet_core_203.Repository {
+namespace AspNetCore203.Repository {
     public class ContactRepository : IContactRepository {
-        private readonly AspNet_core_203DbContext _ctx;
+        private readonly AspNetCore203DbContext _ctx;
 
-        public ContactRepository (AspNet_core_203DbContext context) {
+        public ContactRepository (AspNetCore203DbContext context) {
             _ctx = context;
         }
         public async Task<Contact> ContactAsync (Guid contactId) {

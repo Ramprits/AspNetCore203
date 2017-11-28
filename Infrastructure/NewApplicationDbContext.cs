@@ -1,12 +1,12 @@
 using System;
 using System.Linq;
-using AspNet_core_203.Models;
+using AspNetCore203.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspNet_core_203.Infrastructure {
-    public class AspNet_core_203DbContext : IdentityDbContext {
-        public AspNet_core_203DbContext (DbContextOptions<AspNet_core_203DbContext> options) : base (options) { }
+namespace AspNetCore203.Infrastructure {
+    public class AspNetCore203DbContext : IdentityDbContext {
+        public AspNetCore203DbContext (DbContextOptions<AspNetCore203DbContext> options) : base (options) { }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Location> Locations { get; set; }

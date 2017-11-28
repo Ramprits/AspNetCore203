@@ -1,10 +1,10 @@
 using System;
 using System.Threading.Tasks;
-using AspNet_core_203.Models;
-using AspNet_core_203.Repository;
+using AspNetCore203.Models;
+using AspNetCore203.Repository;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AspNet_core_203.Controllers {
+namespace AspNetCore203.Controllers {
     [Route ("api/campaign")]
     public class CampaignController : Controller {
         private readonly ICampaignaignRepository _repo;

@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace AspNet_core_203.Infrastructure {
+namespace AspNetCore203.Infrastructure {
     public class ClientChangeTracker : INotifyPropertyChanged {
         private bool _isDirty;
 

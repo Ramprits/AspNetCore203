@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AspNet_core_203.Models;
+using AspNetCore203.Models;
 
-namespace AspNet_core_203.Repository {
+namespace AspNetCore203.Repository {
     public interface IClientRepository {
         Task<IEnumerable<Client>> ClientsAsync ();
         Task<Client> ClientAsync (Guid clientId);

@@ -1,4 +1,4 @@
-namespace AspNet_core_203.ViewModels {
+namespace AspNetCore203.ViewModels {
     public class ContactVm {
         public string Name { get; set; }
         public string Mobile { get; set; }

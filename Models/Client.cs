@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace AspNet_core_203.Models {
+namespace AspNetCore203.Models {
     [Table ("Client", Schema = "dbo")]
     public class Client : Entity{
         [Key]

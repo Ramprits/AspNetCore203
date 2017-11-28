@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace AspNet_core_203.ViewModels {
+namespace AspNetCore203.ViewModels {
     public abstract class EmployeeForManipulationDto {
         [Required (ErrorMessage = "You must enter first name")]
         [MaxLength (5, ErrorMessage = "The firstName shouldn't have more than 5 characters.")]

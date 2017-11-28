@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AspNet_core_203.Infrastructure;
-using AspNet_core_203.Repository;
-using AspNet_core_203.ViewModels;
+using AspNetCore203.Infrastructure;
+using AspNetCore203.Repository;
+using AspNetCore203.ViewModels;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace AspNet_core_203.Controllers {
+namespace AspNetCore203.Controllers {
     [Route ("api/camps"), ValidateModel, NoCache]
     public class CampsController : Controller {
         private readonly ICampRepository _repository;

@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AspNet_core_203.Infrastructure;
-using AspNet_core_203.Models;
+using AspNetCore203.Infrastructure;
+using AspNetCore203.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspNet_core_203.Repository {
+namespace AspNetCore203.Repository {
     public class SpeakerRepository : ISpeakerRepository {
-        private readonly AspNet_core_203DbContext _ctx;
+        private readonly AspNetCore203DbContext _ctx;
 
-        public SpeakerRepository (AspNet_core_203DbContext ctx) {
+        public SpeakerRepository (AspNetCore203DbContext ctx) {
             _ctx = ctx;
         }
         public async Task<bool> DelateSpeaker (Guid speakerId) {

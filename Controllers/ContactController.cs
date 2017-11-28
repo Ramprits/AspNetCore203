@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AspNet_core_203.Infrastructure;
-using AspNet_core_203.ViewModels;
+using AspNetCore203.Infrastructure;
+using AspNetCore203.ViewModels;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace AspNet_core_203.Controllers {
+namespace AspNetCore203.Controllers {
     [Route ("api/contact")]
     public class ContactController : Controller {
         private readonly IContactRepository _repo;

@@ -1,0 +1,10 @@
+e:\Angular5\AspNetCore203\bin\Debug\netcoreapp2.0\AspNetcore203.deps.json
+e:\Angular5\AspNetCore203\bin\Debug\netcoreapp2.0\AspNetcore203.runtimeconfig.json
+e:\Angular5\AspNetCore203\bin\Debug\netcoreapp2.0\AspNetcore203.runtimeconfig.dev.json
+e:\Angular5\AspNetCore203\bin\Debug\netcoreapp2.0\AspNetcore203.dll
+e:\Angular5\AspNetCore203\bin\Debug\netcoreapp2.0\AspNetcore203.pdb
+e:\Angular5\AspNetCore203\obj\Debug\netcoreapp2.0\AspNetcore203.csproj.CoreCompileInputs.cache
+e:\Angular5\AspNetCore203\obj\Debug\netcoreapp2.0\AspNetcore203.AssemblyInfoInputs.cache
+e:\Angular5\AspNetCore203\obj\Debug\netcoreapp2.0\AspNetcore203.AssemblyInfo.cs
+e:\Angular5\AspNetCore203\obj\Debug\netcoreapp2.0\AspNetcore203.dll
+e:\Angular5\AspNetCore203\obj\Debug\netcoreapp2.0\AspNetcore203.pdb
