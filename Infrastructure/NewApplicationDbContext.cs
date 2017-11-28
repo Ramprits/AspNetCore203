@@ -19,6 +19,7 @@ namespace AspNet_core_203.Infrastructure {
         public DbSet<Modality> Modalities { get; set; }
         public DbSet<Organization> Organizations { get; set; }
         public DbSet<BusinessUnit> BusinessUnit { get; set; }
+        public DbSet<Campaign> Campaign { get; set; }
 
         protected override void OnModelCreating (ModelBuilder modelBuilder) {
             modelBuilder.HasDefaultSchema ("security");
