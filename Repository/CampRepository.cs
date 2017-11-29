@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+<<<<<<< HEAD
 using AspNetcore203.Infrastructure;
 using AspNetcore203.Models;
 
@@ -11,6 +12,16 @@ namespace AspNetcore203.Repository {
         private readonly AspNetcore203DbContext _ctx;
 
         public CampRepository (AspNetcore203DbContext ctx) {
+=======
+using AspNetCore203.Infrastructure;
+using AspNetCore203.Models;
+
+namespace AspNetCore203.Repository {
+    public class CampRepository : ICampRepository {
+        private readonly AspNetCore203DbContext _ctx;
+
+        public CampRepository (AspNetCore203DbContext ctx) {
+>>>>>>> 3defbe213d772ba5b9a0af0cc4ffa129c9b010ce
             _ctx = ctx;
         }
         public async Task<Camp> CampAsync (Guid campId) {

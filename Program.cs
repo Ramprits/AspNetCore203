@@ -8,7 +8,11 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
+<<<<<<< HEAD
 namespace AspNetcore203
+=======
+namespace AspNetCore203
+>>>>>>> 3defbe213d772ba5b9a0af0cc4ffa129c9b010ce
 {
     public class Program
     {

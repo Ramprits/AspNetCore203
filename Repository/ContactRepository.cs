@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 using AspNetcore203.Infrastructure;
 using AspNetcore203.Models;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,17 @@ namespace AspNetcore203.Repository {
         private readonly AspNetcore203DbContext _ctx;
 
         public ContactRepository (AspNetcore203DbContext context) {
+=======
+using AspNetCore203.Infrastructure;
+using AspNetCore203.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace AspNetCore203.Repository {
+    public class ContactRepository : IContactRepository {
+        private readonly AspNetCore203DbContext _ctx;
+
+        public ContactRepository (AspNetCore203DbContext context) {
+>>>>>>> 3defbe213d772ba5b9a0af0cc4ffa129c9b010ce
             _ctx = context;
         }
         public async Task<Contact> ContactAsync (Guid contactId) {

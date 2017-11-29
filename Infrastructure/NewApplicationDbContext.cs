@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+<<<<<<< HEAD
 using AspNetcore203.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -7,6 +8,15 @@ using Microsoft.EntityFrameworkCore;
 namespace AspNetcore203.Infrastructure {
     public class AspNetcore203DbContext : IdentityDbContext {
         public AspNetcore203DbContext (DbContextOptions<AspNetcore203DbContext> options) : base (options) { }
+=======
+using AspNetCore203.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+
+namespace AspNetCore203.Infrastructure {
+    public class AspNetCore203DbContext : IdentityDbContext {
+        public AspNetCore203DbContext (DbContextOptions<AspNetCore203DbContext> options) : base (options) { }
+>>>>>>> 3defbe213d772ba5b9a0af0cc4ffa129c9b010ce
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Location> Locations { get; set; }

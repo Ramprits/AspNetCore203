@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+<<<<<<< HEAD
 using AspNetcore203.Infrastructure;
 using AspNetcore203.Models;
 
@@ -12,6 +13,17 @@ namespace AspNetcore203.Repository {
         private readonly ILogger _Logger;
 
         public EmployeeRepository (AspNetcore203DbContext context, ILoggerFactory loggerFactory) {
+=======
+using AspNetCore203.Infrastructure;
+using AspNetCore203.Models;
+
+namespace AspNetCore203.Repository {
+    public class EmployeeRepository : IEmployeeRepository {
+        private readonly AspNetCore203DbContext _context;
+        private readonly ILogger _Logger;
+
+        public EmployeeRepository (AspNetCore203DbContext context, ILoggerFactory loggerFactory) {
+>>>>>>> 3defbe213d772ba5b9a0af0cc4ffa129c9b010ce
             _context = context;
             _Logger = loggerFactory.CreateLogger ("EmployeeRepository");
         }
