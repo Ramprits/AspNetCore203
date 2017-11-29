@@ -12609,9 +12609,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\R1163213\\Application\\Demo\\AspNet core 203\\AspNet core 203.csproj",
-      "projectName": "AspNet core 203",
-      "projectPath": "C:\\Users\\R1163213\\Application\\Demo\\AspNet core 203\\AspNet core 203.csproj",
+      "projectUniqueName": "C:\\Users\\R1163213\\Application\\Demo\\AspNet core 203\\AspNetcore203.csproj",
+      "projectName": "AspNetcore203",
+      "projectPath": "C:\\Users\\R1163213\\Application\\Demo\\AspNet core 203\\AspNetcore203.csproj",
       "packagesPath": "C:\\Users\\R1163213\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\R1163213\\Application\\Demo\\AspNet core 203\\obj\\",
       "projectStyle": "PackageReference",

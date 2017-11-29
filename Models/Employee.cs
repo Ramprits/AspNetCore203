@@ -1,9 +1,9 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using AspNet_core_203.Infrastructure;
+using AspNetcore203.Infrastructure;
 
-namespace AspNet_core_203.Models {
+namespace AspNetcore203.Models {
     [Table ("Employee", Schema = "MST")]
     public class Employee  : Entity {
         [Key]

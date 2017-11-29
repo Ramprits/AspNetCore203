@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AspNet_core_203.Infrastructure;
-using AspNet_core_203.Models;
+using AspNetcore203.Infrastructure;
+using AspNetcore203.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace AspNet_core_203.Repository {
+namespace AspNetcore203.Repository {
     public class DepartmentRepository : IDepartmentRepository {
-        private readonly AspNet_core_203DbContext _context;
+        private readonly AspNetcore203DbContext _context;
 
-        public DepartmentRepository (AspNet_core_203DbContext context) {
+        public DepartmentRepository (AspNetcore203DbContext context) {
             _context = context;
         }
         public Task<bool> DeleteDepartmentAsync (Guid id) {

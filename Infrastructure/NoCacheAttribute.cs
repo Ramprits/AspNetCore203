@@ -1,7 +1,7 @@
 using System;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace AspNet_core_203.Infrastructure {
+namespace AspNetcore203.Infrastructure {
     [AttributeUsage (AttributeTargets.Class | AttributeTargets.Method)]
     public sealed class NoCacheAttribute : ActionFilterAttribute {
         public override void OnResultExecuting (ResultExecutingContext context) {

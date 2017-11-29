@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using AspNet_core_203.Infrastructure;
-using AspNet_core_203.Models;
+using AspNetcore203.Infrastructure;
+using AspNetcore203.Models;
 
-namespace AspNet_core_203.Repository {
+namespace AspNetcore203.Repository {
     public class EmployeeRepository : IEmployeeRepository {
-        private readonly AspNet_core_203DbContext _context;
+        private readonly AspNetcore203DbContext _context;
         private readonly ILogger _Logger;
 
-        public EmployeeRepository (AspNet_core_203DbContext context, ILoggerFactory loggerFactory) {
+        public EmployeeRepository (AspNetcore203DbContext context, ILoggerFactory loggerFactory) {
             _context = context;
             _Logger = loggerFactory.CreateLogger ("EmployeeRepository");
         }

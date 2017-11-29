@@ -1,8 +1,8 @@
-using AspNet_core_203.Models;
-using AspNet_core_203.ViewModels;
+using AspNetcore203.Models;
+using AspNetcore203.ViewModels;
 using AutoMapper;
 
-namespace AspNet_core_203.Infrastructure {
+namespace AspNetcore203.Infrastructure {
     public class Profiler : Profile {
         public Profiler () {
             CreateMap<Employee, EmployeeVm> ().

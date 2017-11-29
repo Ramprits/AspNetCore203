@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AspNet_core_203.Models;
-using AspNet_core_203.Repository;
-using AspNet_core_203.ViewModels;
+using AspNetcore203.Models;
+using AspNetcore203.Repository;
+using AspNetcore203.ViewModels;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace AspNet_core_203.Controllers {
+namespace AspNetcore203.Controllers {
     [Route ("api/Departments")]
     public class DepartmentsController : Controller {
         private readonly IDepartmentRepository _repository;

@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AspNet_core_203.Models;
+using AspNetcore203.Models;
 
-namespace AspNet_core_203.Repository {
+namespace AspNetcore203.Repository {
     public interface IDepartmentRepository {
 
         Task<IEnumerable<Department>> GetDepartmentsAsync ();

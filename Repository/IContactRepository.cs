@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AspNet_core_203.Models;
+using AspNetcore203.Models;
 
-namespace AspNet_core_203.Infrastructure {
+namespace AspNetcore203.Infrastructure {
     public interface IContactRepository {
         Task<IEnumerable<Contact>> ContactsAsync ();
         Task<Contact> ContactAsync (Guid contactId);

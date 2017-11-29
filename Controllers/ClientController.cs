@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using AspNet_core_203.Repository;
-using AspNet_core_203.ViewModels;
+using AspNetcore203.Repository;
+using AspNetcore203.ViewModels;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace AspNet_core_203.Controllers {
+namespace AspNetcore203.Controllers {
     [Route ("api/client")]
     public class ClientController : Controller {
         private readonly IClientRepository _repo;

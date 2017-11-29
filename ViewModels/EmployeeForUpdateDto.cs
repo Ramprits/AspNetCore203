@@ -1,4 +1,4 @@
-namespace AspNet_core_203.ViewModels
+namespace AspNetcore203.ViewModels
 {
     public class EmployeeForUpdateDto : EmployeeForManipulationDto {
 
